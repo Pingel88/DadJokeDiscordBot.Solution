@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Discord;
 using Discord.WebSocket;
+using Bot.Models;
 
 public class Program
 {
@@ -12,13 +13,13 @@ public class Program
 
     public async Task MainAsync()
     {
-    _client = new DiscordSocketClient();
+    _client = new DiscordSocketClient();    
 
     _client.Log += Log;
 
     //  You can assign your bot token to a string, and pass that in to connect.
     //  This is, however, insecure, particularly if you plan to have your code hosted in a public repository.
-    var token = "token";
+    var token = EnvironmentVariables.BotToken;
 
     // Some alternative options would be to keep your token in an Environment Variable or a standalone file.
     // var token = Environment.GetEnvironmentVariable("NameOfYourEnvironmentVariable");
