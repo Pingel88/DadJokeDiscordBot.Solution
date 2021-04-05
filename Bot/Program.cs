@@ -1,40 +1,72 @@
 using System;
+using System.Reflection;
 using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
 using Discord;
+using Discord.Commands;
 using Discord.WebSocket;
 using Bot.Models;
+using Bot.Modules;
 
-public class Program
+namespace Bot
 {
-  public static void Main(string[] args)
-    => new Program().MainAsync().GetAwaiter().GetResult();
+  public class Program
+  {
+    public static void Main(string[] args)
+      => new Program().MainAsync().GetAwaiter().GetResult();
 
     private DiscordSocketClient _client;
+    private CommandService _commands;
+    private IServiceProvider _services;
 
     public async Task MainAsync()
     {
-    _client = new DiscordSocketClient();    
+      _client = new DiscordSocketClient();
+      _commands = new CommandService();
 
-    _client.Log += Log;
+      _services = new ServiceCollection()
+        .AddSingleton(_client)
+        .AddSingleton(_commands)
+        .BuildServiceProvider();
+        
+      _client.Log += Log;
 
-    //  You can assign your bot token to a string, and pass that in to connect.
-    //  This is, however, insecure, particularly if you plan to have your code hosted in a public repository.
-    var token = EnvironmentVariables.BotToken;
+      var token = EnvironmentVariables.BotToken;
 
-    // Some alternative options would be to keep your token in an Environment Variable or a standalone file.
-    // var token = Environment.GetEnvironmentVariable("NameOfYourEnvironmentVariable");
-    // var token = File.ReadAllText("token.txt");
-    // var token = JsonConvert.DeserializeObject<AConfigurationClass>(File.ReadAllText("config.json")).Token;
+      await RegisterCommandsAsync();
 
-    await _client.LoginAsync(TokenType.Bot, token);
-    await _client.StartAsync();
+      await _client.LoginAsync(TokenType.Bot, token);
 
-    // Block this task until the program is closed.
-    await Task.Delay(-1);
+      await _client.StartAsync();
+
+      await Task.Delay(-1);
     }
+    
     private Task Log(LogMessage msg)
     {
       Console.WriteLine(msg.ToString());
       return Task.CompletedTask;
     }
+
+    public async Task RegisterCommandsAsync()
+    {
+      _client.MessageReceived += HandleCommandAsync;
+      await _commands.AddModulesAsync(Assembly.GetEntryAssembly(), _services);
+    }
+
+    private async Task HandleCommandAsync(SocketMessage arg)
+    {
+      var message = arg as SocketUserMessage;
+      var context = new SocketCommandContext(_client, message);
+      if (message.Author.IsBot) return;
+
+      int argPos = 0;
+      if (message.HasStringPrefix("!", ref argPos))
+      {
+        var result = await _commands.ExecuteAsync(context, argPos, _services);
+        if (!result.IsSuccess) Console.WriteLine(result.ErrorReason);
+        if (result.Error.Equals(CommandError.UnmetPrecondition)) await message.Channel.SendMessageAsync(result.ErrorReason);
+      }
+    }
+  }
 }
