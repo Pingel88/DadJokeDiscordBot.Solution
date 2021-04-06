@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Discord;
 using Discord.Commands;
-using Discord.WebSocket;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Bot.Models;
 
 namespace Bot.Modules
 {
@@ -41,6 +43,12 @@ namespace Bot.Modules
       await ReplyAsync("https://i.imgur.com/UlPocBP.gif");
     }
 
-    
+    [Command("joke")]
+    public async Task DadJoke()
+    {
+      Joke joke = Joke.GetJoke();
+      await ReplyAsync(joke.Setup);
+      await ReplyAsync(joke.Punchline);
+    }
   }
 }

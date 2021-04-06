@@ -6,7 +6,6 @@ using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
 using Bot.Models;
-using Bot.Modules;
 
 namespace Bot
 {
