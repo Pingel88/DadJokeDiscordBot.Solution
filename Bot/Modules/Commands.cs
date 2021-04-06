@@ -8,6 +8,7 @@ using Discord.Commands;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Bot.Models;
+using System.Threading;
 
 namespace Bot.Modules
 {
@@ -43,12 +44,21 @@ namespace Bot.Modules
       await ReplyAsync("https://i.imgur.com/UlPocBP.gif");
     }
 
+    [Command("repo")]
+    public async Task RepoLink()
+    {
+      await ReplyAsync("https://github.com/Pingel88/TravisScottDiscordBot.Solution");
+    }
+
     [Command("joke")]
     public async Task DadJoke()
     {
       Joke joke = Joke.GetJoke();
       await ReplyAsync(joke.Setup);
+      Thread.Sleep(7500);
       await ReplyAsync(joke.Punchline);
+      Thread.Sleep(1000);
+      await ReplyAsync("https://cdn.discordapp.com/attachments/828833580250562580/829008098969911346/Screen_Shot_2021-04-05_at_4.32.27_PM.png");
     }
   }
 }
