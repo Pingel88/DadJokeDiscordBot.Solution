@@ -22,8 +22,23 @@
       <strong>Levi Kohler</strong>
     </a>
   </p>
-  
-
-  https://github.com/Pingel88
-
-https://github.com/OralBrown
+  <p align="center">
+    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/graphs/contributors">
+      <img src="https://img.shields.io/github/contributors/Pingel88/TravisScottDiscordBot.Solution.svg?style=plastic">
+    </a>
+    ¨
+    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/stargazers">
+      <img src="https://img.shields.io/github/stars/Pingel88/TravisScottDiscordBot.Solution.svg?color=yellow&style=plastic">
+    </a>
+    ¨
+    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/issues">
+      <img src="https://img.shields.io/github/issues/Pingel88/TravisScottDiscordBot.Solution?style=plastic">
+    </a>
+    ¨
+    <img src="https://img.shields.io/docker/automated/jeroenvanseeters/discord-bot?color=green&style=plastic">
+    ¨
+    <a href="https://github.com/Pingel88/Best-ReadMe-Template/blob/master/LICENSE.txt">
+      <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic">
+    </a>
+  </p> 
+</p>
