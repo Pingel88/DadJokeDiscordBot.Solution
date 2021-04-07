@@ -35,6 +35,8 @@
       <img src="https://img.shields.io/github/issues/Pingel88/TravisScottDiscordBot.Solution?style=plastic">
     </a>
     ¨
+    <img src="https://img.shields.io/github/issues-pr-closed/pingel88/TravisScottDiscordBot.Solution?style=plastic">
+    ¨
     <img src="https://img.shields.io/docker/automated/jeroenvanseeters/discord-bot?color=green&style=plastic">
     ¨
     <a href="https://github.com/Pingel88/Best-ReadMe-Template/blob/master/LICENSE.txt">
@@ -55,10 +57,22 @@
 ## 🌐 About the Project
 
 ### 📖 Description
+A Discord bot that acts as a dad joke supplement to replace our retired instructor at [Epicodus](https://www.epicodus.com/). It utilizes an API via RESTful principles, and Docker Containerization for remote hosting. 
 
 ### 🦠 Known Bugs
 
+* It's too perfect.
+
 ### 🛠 Built With
+
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
+* [.NET Core 2.1](https://dotnet.microsoft.com/download/dotnet/2.1)
+* [Discord.Net](https://docs.stillu.cc/)
+* [RapidAPI](https://rapidapi.com/KegenGuyll/api/dad-jokes)
+* [Docker](https://www.docker.com/)
+* [DigitalOcean](https://cloud.digitalocean.com/)
+* [Git & GitHub](https://github.com/)
 
 ------------------------------
 
