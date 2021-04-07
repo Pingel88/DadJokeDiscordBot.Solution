@@ -24,20 +24,20 @@
   </p>
   <p align="center">
     <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/graphs/contributors">
-      <img src="https://img.shields.io/github/contributors/Pingel88/TravisScottDiscordBot.Solution.svg?style=plastic">
+      <img src="https://img.shields.io/github/contributors/Pingel88/TravisScottDiscordBot.Solution.svg?color=green&style=plastic">
     </a>
+    ¨
+    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/issues">
+      <img src="https://img.shields.io/github/issues/Pingel88/TravisScottDiscordBot.Solution?color=green&style=plastic">
+    </a>
+    ¨
+    <img src="https://img.shields.io/github/issues-pr-closed/pingel88/TravisScottDiscordBot.Solution?color=green&style=plastic">
     ¨
     <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/stargazers">
       <img src="https://img.shields.io/github/stars/Pingel88/TravisScottDiscordBot.Solution.svg?color=yellow&style=plastic">
     </a>
     ¨
-    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/issues">
-      <img src="https://img.shields.io/github/issues/Pingel88/TravisScottDiscordBot.Solution?style=plastic">
-    </a>
-    ¨
-    <img src="https://img.shields.io/github/issues-pr-closed/pingel88/TravisScottDiscordBot.Solution?style=plastic">
-    ¨
-    <img src="https://img.shields.io/docker/automated/jeroenvanseeters/Discord-bot?color=green&style=plastic">
+    <img src="https://img.shields.io/docker/cloud/automated/jeroenvanseeters/discord-bot?style=plastic">
     ¨
     <a href="https://github.com/Pingel88/Best-ReadMe-Template/blob/master/LICENSE.txt">
       <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic">
@@ -63,7 +63,7 @@ A Discord bot that acts as a dad joke supplement to replace one of our retired i
 Although no setup is required to simply invite the bot to your Discord server, if you would like to download, alter, or deploy the source code yourself, follow along with the instructions detailed in the [Getting Started](#-getting-started) Section.
 <br>
 <br> 
-Otherwise, skip to the [Add OUR Bot](#-add-our-bot) section to get started by adding the bot directly to your own Discord server. 
+Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get started by adding the bot directly to your own Discord server. 
 
 
 ### 🦠 Known Bugs
@@ -250,7 +250,8 @@ SOFTWARE.
 
 #### [The Internet](https://webfoundation.org/)
 >"...the first thing that humanity has built that humanity doesn't understand..."
-> - Eric Schmidt, Google (Alphabet Inc.)
+
+-Eric Schmidt, Google (Alphabet Inc.)
 
 ------------------------------
 
