@@ -113,6 +113,27 @@ Otherwise, skip to the [Setup and Use](###⚙️-setup-and-use) Section to get s
 
 ### ⚙️ Setup and Use
 
+  #### Cloning
+
+  1) Navigate to the [Discord Bot repository here](https://github.com/Pingel88/TravisScottDiscordBot.Solution).
+  2) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
+  3) Open up your system Terminal or GitBash, navigate to your desktop with the command: `cd Desktop`, or whichever location suits you best.
+  4) Clone the repository to your desktop: `$ git clone https://github.com/Pingel88/TravisScottDiscordBot.Solution.git`
+  5) Run the command `cd TravisScottDiscordBot.Solution` to enter into the project directory.
+  6) View or Edit:
+      * Code Editor - Run the command `atom .` or `code .` to open the project in Atom or VisualStudio Code respectively for review and editing.
+      * Text Editor - Open by double clicking on any of the files to open in a text editor.
+
+  #### Download
+
+  1) Navigate to the [Discord Bot repository here](https://github.com/Pingel88/TravisScottDiscordBot.Solution).
+  2) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
+  3) Click 'Download ZIP' and unextract.
+  4) Open by double clicking on any of the files to open in a text editor.
+
+  #### EnvironmentVariables
+
+  1) Create a new file in the TravisScottDiscordBot.Solution/Bot/
 ## 🛰️ API Documentation
 
 ------------------------------
