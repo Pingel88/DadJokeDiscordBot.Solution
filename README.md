@@ -57,13 +57,13 @@
 ## 🌐 About the Project
 
 ### 📖 Description
-A Discord bot that acts as a dad joke supplement to replace our retired instructor at [Epicodus](https://www.epicodus.com/). Written in C#, it utilizes an API via RESTful principles, WebSocket protocol, and Docker Containerization for remote server hosting. 
+A Discord bot that acts as a dad joke supplement to replace one of our retired instructors at [Epicodus](https://www.epicodus.com/). Written in C#/.NET, it utilizes an API via RESTful principles, WebSocket protocol, and Docker Containerization for remote server hosting. 
 <br>
 <br>
 Although no setup is required to simply invite the bot to your discord channel, if you would like to download, alter, or deploy the source code yourself, follow along with the instructions detailed in the [Getting Started](##🏁-getting-started) Section.
 <br>
 <br> 
-Otherwise, skip to the [Setup and Use](###⚙️-setup-and-use) Section to get started by adding the bot directly to your own discord guild. 
+Otherwise, skip to the [Add OUR Bot](##🛰️-add-our-bot) Section to get started by adding the bot directly to your own discord guild. 
 
 ### 🦠 Known Bugs
 
@@ -104,8 +104,8 @@ Otherwise, skip to the [Setup and Use](###⚙️-setup-and-use) Section to get s
   To view or edit the code, you will need an code editor or text editor. The popular open-source choices for an code editor are Atom and VisualStudio Code.
 
   1) Code Editor Download:
-    * Option 1: [Atom](https://nodejs.org/en/)
-    * Option 2: [VisualStudio Code](https://www.npmjs.com/)
+      * Option 1: [Atom](https://nodejs.org/en/)
+      * Option 2: [VisualStudio Code](https://www.npmjs.com/)
   2) Click the download most applicable to your OS and system.
   3) Wait for download to complete, then install -- Windows will run the setup exe and macOS will drag and drop into applications.
   4) Optionally, create a [GitHub Account](https://github.com)
@@ -128,13 +128,61 @@ Otherwise, skip to the [Setup and Use](###⚙️-setup-and-use) Section to get s
 
   1) Navigate to the [Discord Bot repository here](https://github.com/Pingel88/TravisScottDiscordBot.Solution).
   2) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
-  3) Click 'Download ZIP' and unextract.
+  3) Click 'Download ZIP' and extract.
   4) Open by double clicking on any of the files to open in a text editor.
 
   #### EnvironmentVariables
 
-  1) Create a new file in the TravisScottDiscordBot.Solution/Bot/
-## 🛰️ API Documentation
+  1) Create a new file in the TravisScottDiscordBot.Solution/Bot/Models directory named `EnvironmentVariables.cs`.
+  2) Add the following code snippet to the new EnvironmentVariables.cs file:
+
+      ```
+      namespace Bot.Models
+      {
+        public static class EnvironmentVariables
+        {
+          public static string ApiKey = "[YOUR API KEY]";
+
+          public static string BotToken = "[YOUR BOT TOKEN]";
+        }
+      }
+      ```
+  3) Please note that you will have to replace the `[YOUR API KEY]` and `[YOUR BOT TOKEN]` placeholders with your own bot token and API key. Follow along with the next instructions to obtain them.
+  
+  #### Acquire API Key
+
+  1) [Create an account](https://rapidapi.com/auth/sign-up) with RapidAPI in order to obtain an API key. 
+  2) Visit the [pricing tab](https://rapidapi.com/KegenGuyll/api/dad-jokes/pricing) for the Dad Jokes page to subscribe to the API. The free tier should suffice for testing purposes. 
+  3) Next, navigate to the [endpoints tab](https://rapidapi.com/KegenGuyll/api/dad-jokes/endpoints) to obtain your API key -- you will have to copy it from the code snippets in the panel on the right.
+  4) Replace the placeholder text in your EnvironmentVariables.cs file with the API key.
+
+  #### Acquire Bot Token
+
+  1) You will have to sign in with your discord account in order to create a new bot app. If you don't have one already, sign up [here](https://discord.com/).
+  2) [This link](https://discord.com/developers/applications) will take you to the developers dashboard to begin setting up your dad joke bot. 
+      * Select new application.
+      * Name the application.
+      * Select `Bot` on the left.
+      * Select `Add Bot` on the right.
+      * Select `Yes, do it!`.
+  3) To acquire the bot token, click on `Copy` under **Build-A-Bot** to copy your token to your clipboard.
+  4) Replace the placeholder text in your EnvironmentVariables.cs file with your bot token.
+
+  #### Launch Application
+
+  With your environment variables in place, you are only a few terminal commands away from launching the bot.
+  1) In the TravisScottDiscordBot.Solution/Bot repository,
+      * Enter `dotnet restore` in your terminal.
+      * Next, enter `dotnet run` in your terminal.
+  2) Next, invite the bot to your server, Back in the [Developers Dashboard](https://discord.com/developers/applications), apply the following steps:
+      * Select `OAuth2` on the left.
+      * Select `Bot` under scopes.
+      * Select `Send Messages` under **Text Permissions** inside of **Bot Permissions**.
+  3) Copy the **URL** at the bottom of **Scopes**, and paste into the browser to invite the bot to servers you are an Admin of.
+
+## 🛰️ Add OUR Bot
+
+
 
 ------------------------------
 
