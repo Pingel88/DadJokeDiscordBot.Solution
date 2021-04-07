@@ -58,6 +58,12 @@
 
 ### 📖 Description
 A Discord bot that acts as a dad joke supplement to replace our retired instructor at [Epicodus](https://www.epicodus.com/). Written in C#, it utilizes an API via RESTful principles, WebSocket protocol, and Docker Containerization for remote server hosting. 
+<br>
+<br>
+Although no setup is required to simply invite the bot to your discord channel, if you would like to download, alter, or deploy the source code yourself, follow along with the instructions detailed in the [Getting Started](##🏁-getting-started) Section.
+<br>
+<br> 
+Otherwise, skip to the [Setup and Use](###⚙️-setup-and-use) Section to get started by adding the bot directly to your own discord guild. 
 
 ### 🦠 Known Bugs
 
@@ -79,6 +85,31 @@ A Discord bot that acts as a dad joke supplement to replace our retired instruct
 ## 🏁 Getting Started
 
 ### 📋 Prerequisites
+
+### Install .NET Core 2.1
+**NOT compatible with .NET 5.0**
+* On macOS Mojave or later
+  * [Click here](https://dotnet.microsoft.com/download/dotnet/2.1) to download the .NET Core SDK from Microsoft Corp for macOS.
+* On Windows 10 x64 or later
+  * [Click here](https://dotnet.microsoft.com/download/dotnet/2.1) to download the 64-bit .NET Core SDK from Microsoft Corp for Windows.
+
+#### Install dotnet script
+ Enter the command ``dotnet tool install -g dotnet-script`` in Terminal for macOS or PowerShell for Windows.
+
+#### Install Docker
+(Optional, for remote hosting)[Download and Install Docker](https://www.docker.com/products/docker-desktop)
+
+#### Code Editor
+
+  To view or edit the code, you will need an code editor or text editor. The popular open-source choices for an code editor are Atom and VisualStudio Code.
+
+  1) Code Editor Download:
+    * Option 1: [Atom](https://nodejs.org/en/)
+    * Option 2: [VisualStudio Code](https://www.npmjs.com/)
+  2) Click the download most applicable to your OS and system.
+  3) Wait for download to complete, then install -- Windows will run the setup exe and macOS will drag and drop into applications.
+  4) Optionally, create a [GitHub Account](https://github.com)
+
 
 ### ⚙️ Setup and Use
 
