@@ -57,7 +57,7 @@
 ## 🌐 About the Project
 
 ### 📖 Description
-A Discord bot that acts as a dad joke supplement to replace our retired instructor at [Epicodus](https://www.epicodus.com/). It utilizes an API via RESTful principles, and Docker Containerization for remote hosting. 
+A Discord bot that acts as a dad joke supplement to replace our retired instructor at [Epicodus](https://www.epicodus.com/). Written in C#, it utilizes an API via RESTful principles, WebSocket protocol, and Docker Containerization for remote server hosting. 
 
 ### 🦠 Known Bugs
 
