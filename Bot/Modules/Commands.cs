@@ -48,10 +48,16 @@ namespace Bot.Modules
       await ReplyAsync("https://cdn.discordapp.com/attachments/828833580250562580/829008098969911346/Screen_Shot_2021-04-05_at_4.32.27_PM.png");
     }
 
+    [Command("botlink")]
+    public async Task BotLink()
+    {
+      await ReplyAsync("https://discord.com/oauth2/authorize?client_id=828681816235180082&permissions=2048&scope=bot");
+    }
+
     [Command("commands")]
     public async Task CommandList()
     {
-      await ReplyAsync("```yaml\n!ping play ping pong with Travis Scott Discord Bot\n!joke enjoy a dad joke from Travis Scott Discord Bot\n```");
+      await ReplyAsync("```yaml\n!ping play ping pong with Travis Scott Discord Bot\n!joke enjoy a dad joke from Travis Scott Discord Bot\n!botlink add this bot to your discord\n```");
     }
   }
 }
