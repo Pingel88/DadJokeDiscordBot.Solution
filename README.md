@@ -182,6 +182,12 @@ Otherwise, skip to the [Add OUR Bot](##🛰️-add-our-bot) Section to get start
 
 ## 🛰️ Add OUR Bot
 
+1) [Click here](https://discord.com/api/oauth2/authorize?client_id=828681816235180082&permissions=2048&scope=bot)
+2) If you are not logged in to Discord already, go ahead and do that now. 
+3) Select the server you wish to add the Bot to. 
+4) Click `Continue`.
+5) Click `Authorize`.
+6) Enjoy!
 
 
 ------------------------------
