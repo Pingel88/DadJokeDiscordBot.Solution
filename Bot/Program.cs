@@ -4,6 +4,7 @@ using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Reflection;
+using System.Threading;
 using System.Threading.Tasks;
 using Bot.Models;
 
@@ -63,7 +64,16 @@ namespace Bot
       if (message.HasStringPrefix("!", ref argPos))
       {
         var result = await _commands.ExecuteAsync(context, argPos, _services);
-        if (!result.IsSuccess) Console.WriteLine(result.ErrorReason);
+        if (!result.IsSuccess) 
+        {
+          Console.WriteLine(result.ErrorReason);
+          if (result.ErrorReason == "Unknown command.")
+          {
+            await message.Channel.SendMessageAsync("Invalid command. For a list of commands, type !commands");
+            Thread.Sleep(3000);
+            await message.Channel.SendMessageAsync("https://i.imgur.com/iwEd8zI.gif");
+          }
+        }
         if (result.Error.Equals(CommandError.UnmetPrecondition)) await message.Channel.SendMessageAsync(result.ErrorReason);
       }
     }
