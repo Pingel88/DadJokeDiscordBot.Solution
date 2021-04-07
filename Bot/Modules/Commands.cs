@@ -13,30 +13,6 @@ namespace Bot.Modules
       await ReplyAsync("pong");
     }
 
-    [Command("snoot")]
-    public async Task Snoot()
-    {
-      await ReplyAsync("I'm Jeroen, snoot snoot snoot I'm better because I'm a Europeepeepeepeepeepeepeepeepeepeepeepeepeepen15.");
-    }
-
-    [Command("jeroen")]
-    public async Task Jeroen()
-    {
-      await ReplyAsync("https://i.gifer.com/G2La.gif");
-    }
-
-    [Command("levi")]
-    public async Task Levi()
-    {
-      await ReplyAsync("https://media.giphy.com/media/xThtag14x9AOyZOXiU/giphy.gif");
-    }
-
-    [Command("morgan")]
-    public async Task Morgan()
-    {
-      await ReplyAsync("https://i.imgur.com/UlPocBP.gif");
-    }
-
     [Command("joke")]
     public async Task DadJoke()
     {
@@ -57,7 +33,7 @@ namespace Bot.Modules
     [Command("commands")]
     public async Task CommandList()
     {
-      await ReplyAsync("```yaml\n!ping play ping pong with Travis Scott Discord Bot\n!joke enjoy a dad joke from Travis Scott Discord Bot\n!botlink add this bot to your discord\n```");
+      await ReplyAsync("```yaml\n!ping play ping pong with Travis Scott Discord Bot\n!joke enjoy a dad joke from Travis Scott Discord Bot\n!botlink add this bot to your Discord\n```");
     }
   }
 }
