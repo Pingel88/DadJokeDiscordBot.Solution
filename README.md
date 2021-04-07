@@ -190,7 +190,7 @@ Otherwise, skip to the [Add OUR Bot](#add-our-bot) section to get started by add
   #### Launch Application
 
   With your environment variables in place, you are only a few terminal commands away from launching the bot.
-  1) In the TravisScottDiscordBot.Solution/Bot repository,
+  1) In the TravisScottDiscordBot.Solution/Bot repository:
       * Enter `dotnet restore` in your terminal.
       * Enter `dotnet run` in your terminal.
   2) Invite the bot to your server, Back in the [developers dashboard](https://Discord.com/developers/applications), apply the following steps:
@@ -203,7 +203,7 @@ Otherwise, skip to the [Add OUR Bot](#add-our-bot) section to get started by add
 
 ## 🛰️ Add OUR Bot
 
-1) [Click here](https://Discord.com/api/oauth2/authorize?client_id=828681816235180082&permissions=2048&scope=bot)
+1) [Click here](https://Discord.com/api/oauth2/authorize?client_id=828681816235180082&permissions=2048&scope=bot).
 2) If you are not logged in to Discord already, go ahead and do that now. 
 3) Select the server you wish to add the bot to. 
 4) Click `Continue`.
@@ -265,7 +265,7 @@ SOFTWARE.
 
 ------------------------------
 
-## 🌟 Acknowledgments
+## 🌟 Acknowledgements
 
 #### [Epicodus](https://www.epicodus.com/)
 >"A school for tech careers... to help people learn the skills they need to get great jobs."
