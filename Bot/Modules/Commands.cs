@@ -51,7 +51,7 @@ namespace Bot.Modules
     [Command("commands")]
     public async Task CommandList()
     {
-      await ReplyAsync("```!ping: play ping pong with Travis Scott Discord Bot\n!joke: enjoy a dad joke from Travis Scott Discord Bot```");
+      await ReplyAsync("```yaml\n!ping play ping pong with Travis Scott Discord Bot\n!joke enjoy a dad joke from Travis Scott Discord Bot\n```");
     }
   }
 }
