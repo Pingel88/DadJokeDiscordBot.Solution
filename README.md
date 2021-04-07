@@ -55,7 +55,6 @@
 </p>
 
 ## 🌐 About the Project
-<br>
 
 ### 📖 Description
 A Discord bot that acts as a dad joke supplement to replace one of our retired instructors at [Epicodus](https://www.epicodus.com/). Written in C#/.NET, it utilizes an API via RESTful principles, WebSocket protocol, and Docker Containerization for remote server hosting. 
@@ -65,12 +64,11 @@ Although no setup is required to simply invite the bot to your Discord server, i
 <br>
 <br> 
 Otherwise, skip to the [Add OUR Bot](#-add-our-bot) section to get started by adding the bot directly to your own Discord server. 
-<br>
+
 
 ### 🦠 Known Bugs
 
 * It's too perfect.
-<br>
 
 ### 🛠 Built With
 
@@ -94,15 +92,12 @@ Otherwise, skip to the [Add OUR Bot](#-add-our-bot) section to get started by ad
     * [Click here](https://dotnet.microsoft.com/download/dotnet/2.1) to download the .NET Core SDK from Microsoft Corp for macOS.
   * On Windows 10 x64 or later
     * [Click here](https://dotnet.microsoft.com/download/dotnet/2.1) to download the 64-bit .NET Core SDK from Microsoft Corp for Windows.
-  <br>
 
   #### Install .NET Script
   Enter the command `dotnet tool install -g dotnet-script` in Terminal for macOS or PowerShell for Windows.
-  <br>
 
   #### Install Docker
   (Optional) [Download and install Docker](https://www.docker.com/products/docker-desktop)
-  <br>
 
   #### Code Editor
 
@@ -127,7 +122,6 @@ Otherwise, skip to the [Add OUR Bot](#-add-our-bot) section to get started by ad
   6) View or edit:
       * Code editor - Run the command `atom .` or `code .` to open the project in Atom or Visual Studio Code respectively for review and editing.
       * Text editor - Open by double clicking on any of the files to open in a text editor.
-  <br>
 
   #### Download
 
@@ -135,7 +129,6 @@ Otherwise, skip to the [Add OUR Bot](#-add-our-bot) section to get started by ad
   2) Click 'Code' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
   3) Click 'Download ZIP' and extract.
   4) Open by double clicking on any of the files to open in a text editor.
-  <br>
 
   #### EnvironmentVariables
 
@@ -154,7 +147,6 @@ Otherwise, skip to the [Add OUR Bot](#-add-our-bot) section to get started by ad
       }
       ```
   3) Please note that you will have to replace the `[YOUR API KEY]` and `[YOUR BOT TOKEN]` placeholders with your own bot token and API key. Follow along with the next instructions to obtain them.
-  <br>
 
   #### Acquire API Key
 
@@ -162,7 +154,6 @@ Otherwise, skip to the [Add OUR Bot](#-add-our-bot) section to get started by ad
   2) Visit the [pricing tab](https://rapidapi.com/KegenGuyll/api/dad-jokes/pricing) for the Dad Jokes page to subscribe to the API. The free tier should suffice for testing purposes. 
   3) Navigate to the [endpoints tab](https://rapidapi.com/KegenGuyll/api/dad-jokes/endpoints) to obtain your API key -- you will have to copy it from the code snippets in the panel on the right.
   4) Replace the placeholder text in your EnvironmentVariables.cs file with the API key.
-  <br>
 
   #### Acquire Bot Token
 
@@ -175,7 +166,6 @@ Otherwise, skip to the [Add OUR Bot](#-add-our-bot) section to get started by ad
       * Select `Yes, do it!`.
   3) To acquire the bot token, click on `Copy` under **Build-A-Bot** to copy your token to your clipboard.
   4) Replace the placeholder text in your EnvironmentVariables.cs file with your bot token.
-  <br>
   
   #### Launch Application
 
@@ -188,7 +178,6 @@ Otherwise, skip to the [Add OUR Bot](#-add-our-bot) section to get started by ad
       * Select `Bot` under scopes.
       * Select `Send Messages` under **Text Permissions** inside of **Bot Permissions**.
   3) Copy the **URL** at the bottom of **Scopes**, and paste into the browser to invite the bot to servers you are an admin of.
-<br>
 
 ## 🛰️ Add OUR Bot
 
