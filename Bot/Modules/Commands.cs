@@ -47,5 +47,11 @@ namespace Bot.Modules
       Thread.Sleep(1000);
       await ReplyAsync("https://cdn.discordapp.com/attachments/828833580250562580/829008098969911346/Screen_Shot_2021-04-05_at_4.32.27_PM.png");
     }
+
+    [Command("commands")]
+    public async Task CommandList()
+    {
+      await ReplyAsync("```!ping: play ping pong with Travis Scott Discord Bot\n!joke: enjoy a dad joke from Travis Scott Discord Bot```");
+    }
   }
 }
