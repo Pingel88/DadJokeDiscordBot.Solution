@@ -88,16 +88,15 @@ Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get star
 ### 📋 Prerequisites
 
   #### Install .NET Core 2.1
+
   * On macOS Mojave or later
     * [Click here](https://dotnet.microsoft.com/download/dotnet/2.1) to download the .NET Core SDK from Microsoft Corp for macOS.
   * On Windows 10 x64 or later
     * [Click here](https://dotnet.microsoft.com/download/dotnet/2.1) to download the 64-bit .NET Core SDK from Microsoft Corp for Windows.
 
   #### Install .NET Script
-  Enter the command `dotnet tool install -g dotnet-script` in Terminal for macOS or PowerShell for Windows.
 
-  #### Install Docker
-  (Optional) [Download and install Docker](https://www.docker.com/products/docker-desktop)
+  Enter the command `dotnet tool install -g dotnet-script` in Terminal for macOS or PowerShell for Windows.
 
   #### Code Editor
 
@@ -108,7 +107,14 @@ Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get star
       * Option 2: [Visual Studio Code](https://code.visualstudio.com/)
   2) Click the download most applicable to your OS and system.
   3) Wait for download to complete, then install -- Windows will run the setup exe and macOS will drag and drop into applications.
-  4) Optionally, create a [GitHub account](https://github.com)
+  4) Open your editor, and open the Command Palette by pressing `Cmd+Shift+P` for Mac, or `Ctrl-shift-p` for Windows
+      * For VS Code, type `Shell Command: Install 'code' command in PATH` into the Command Palette.
+      * For Atom, type `Install Shell Commands` into the Command Palette.
+  5) Optionally, create a [GitHub account](https://github.com)
+
+  #### Install Docker
+
+  (Optional) [Download and install Docker](https://www.docker.com/products/docker-desktop)
 
 ### ⚙️ Setup and Use
 
