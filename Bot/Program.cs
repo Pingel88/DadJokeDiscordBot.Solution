@@ -69,7 +69,7 @@ namespace Bot
           Console.WriteLine(result.ErrorReason);
           if (result.ErrorReason == "Unknown command.")
           {
-            await message.Channel.SendMessageAsync("Invalid command. For a list of commands, type !commands");
+            await message.Channel.SendMessageAsync("Invalid command. For a list of commands, type $commands");
             Thread.Sleep(3000);
             await message.Channel.SendMessageAsync("https://i.imgur.com/iwEd8zI.gif");
           }
