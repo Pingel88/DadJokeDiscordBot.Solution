@@ -18,9 +18,9 @@ namespace Bot.Modules
     {
       Joke joke = Joke.GetJoke();
       await ReplyAsync(joke.Setup);
-      Thread.Sleep(7500);
+      Thread.Sleep(6500);
       await ReplyAsync(joke.PunchLine);
-      Thread.Sleep(1000);
+      Thread.Sleep(3000);
       await ReplyAsync("https://cdn.discordapp.com/attachments/828833580250562580/829008098969911346/Screen_Shot_2021-04-05_at_4.32.27_PM.png");
     }
 
@@ -33,7 +33,13 @@ namespace Bot.Modules
     [Command("commands")]
     public async Task CommandList()
     {
-      await ReplyAsync("```yaml\n!ping play ping pong with Travis Scott Discord Bot\n!joke enjoy a dad joke from Travis Scott Discord Bot\n!botlink add this bot to your Discord\n```");
+      await ReplyAsync("```yaml\n!ping play ping pong with Travis Scott Discord Bot\n!joke enjoy a dad joke from Travis Scott Discord Bot\n!botlink add this bot to your Discord\n!github view source code\n```");
+    }
+
+    [Command("github")]
+    public async Task GitHub()
+    {
+      await ReplyAsync("https://github.com/Pingel88/TravisScottDiscordBot.Solution");
     }
   }
 }

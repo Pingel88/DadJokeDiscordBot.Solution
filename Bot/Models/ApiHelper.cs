@@ -15,4 +15,4 @@ namespace Bot.Models
       return response.Content;
     }
   }
-}
+} 

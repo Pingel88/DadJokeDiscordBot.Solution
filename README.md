@@ -10,16 +10,16 @@
   </p>
   <p align="center">
     <a href="https://github.com/Pingel88">
-      <strong>Mike Pingel</strong> | 
+      <strong>Mike Pingel</strong> |  
     </a>
     <a href="https://github.com/MorganJBradford">
       <strong>Morgan Bradford</strong> | 
     </a>
-    <a href="https://github.com/Jeroenemo">
-      <strong>Jeroen van Seeters</strong> | 
-    </a>
     <a href="https://github.com/levi-kohler">
-      <strong>Levi Kohler</strong>
+      <strong>Levi Kohler</strong> |
+    </a>
+    <a href="https://github.com/Jeroenemo">
+      <strong>Jeroen van Seeters</strong> 
     </a>
   </p>
   <p align="center">
@@ -31,13 +31,17 @@
       <img src="https://img.shields.io/github/issues/Pingel88/TravisScottDiscordBot.Solution?color=green&style=plastic">
     </a>
     ¨
-    <img src="https://img.shields.io/github/issues-pr-closed/pingel88/TravisScottDiscordBot.Solution?color=green&style=plastic">
+    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/pulls">
+      <img src="https://img.shields.io/github/issues-pr-closed/pingel88/TravisScottDiscordBot.Solution?color=green&style=plastic">
+    </a>
     ¨
     <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/stargazers">
       <img src="https://img.shields.io/github/stars/Pingel88/TravisScottDiscordBot.Solution.svg?color=yellow&style=plastic">
     </a>
     ¨
-    <img src="https://img.shields.io/docker/cloud/automated/jeroenvanseeters/discord-bot?style=plastic">
+    <a href="https://hub.docker.com/r/jeroenvanseeters/discord-bot">
+      <img src="https://img.shields.io/docker/cloud/automated/jeroenvanseeters/discord-bot?color=yellow&style=plastic">
+    </a>
     ¨
     <a href="https://github.com/Pingel88/Best-ReadMe-Template/blob/master/LICENSE.txt">
       <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic">
@@ -57,7 +61,7 @@
 ## 🌐 About the Project
 
 ### 📖 Description
-A Discord bot that acts as a dad joke supplement to replace one of our retired instructors at [Epicodus](https://www.epicodus.com/). Written in C#/.NET, it utilizes an API via RESTful principles, WebSocket protocol, and Docker Containerization for remote server hosting. 
+A Discord bot that acts as a dad joke supplement to replace one of our retired instructors at [Epicodus](https://www.epicodus.com/). Written in C#/.NET, it utilizes an API via RESTful principles, WebSocket protocol, and Docker containerization for remote server hosting. 
 <br>
 <br>
 Although no setup is required to simply invite the bot to your Discord server, if you would like to download, alter, or deploy the source code yourself, follow along with the instructions detailed in the [Getting Started](#-getting-started) Section.
@@ -88,16 +92,15 @@ Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get star
 ### 📋 Prerequisites
 
   #### Install .NET Core 2.1
+
   * On macOS Mojave or later
     * [Click here](https://dotnet.microsoft.com/download/dotnet/2.1) to download the .NET Core SDK from Microsoft Corp for macOS.
   * On Windows 10 x64 or later
     * [Click here](https://dotnet.microsoft.com/download/dotnet/2.1) to download the 64-bit .NET Core SDK from Microsoft Corp for Windows.
 
   #### Install .NET Script
-  Enter the command `dotnet tool install -g dotnet-script` in Terminal for macOS or PowerShell for Windows.
 
-  #### Install Docker
-  (Optional) [Download and install Docker](https://www.docker.com/products/docker-desktop)
+  Enter the command `dotnet tool install -g dotnet-script` in Terminal for macOS or PowerShell for Windows.
 
   #### Code Editor
 
@@ -108,7 +111,14 @@ Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get star
       * Option 2: [Visual Studio Code](https://code.visualstudio.com/)
   2) Click the download most applicable to your OS and system.
   3) Wait for download to complete, then install -- Windows will run the setup exe and macOS will drag and drop into applications.
-  4) Optionally, create a [GitHub account](https://github.com)
+  4) Open your editor, and open the Command Palette by pressing `Cmd+Shift+P` for Mac, or `Ctrl-shift-p` for Windows
+      * For VS Code, type `Shell Command: Install 'code' command in PATH` into the Command Palette.
+      * For Atom, type `Install Shell Commands` into the Command Palette.
+  5) Optionally, create a [GitHub account](https://github.com)
+
+  #### Install Docker
+
+  (Optional) [Download and install Docker](https://www.docker.com/products/docker-desktop)
 
 ### ⚙️ Setup and Use
 
@@ -146,14 +156,14 @@ Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get star
         }
       }
       ```
-  3) Please note that you will have to replace the `[YOUR API KEY]` and `[YOUR BOT TOKEN]` placeholders with your own bot token and API key. Follow along with the next instructions to obtain them.
+  3) Please note that you will have to replace the `[YOUR API KEY]` and `[YOUR BOT TOKEN]` placeholders with your own bot token and API key. Follow along with the subsequent instructions to obtain them.
 
   #### Acquire API Key
 
   1) [Create an account](https://rapidapi.com/auth/sign-up) with RapidAPI in order to obtain an API key. 
-  2) Visit the [pricing tab](https://rapidapi.com/KegenGuyll/api/dad-jokes/pricing) for the Dad Jokes page to subscribe to the API. The free tier should suffice for testing purposes. 
-  3) Navigate to the [endpoints tab](https://rapidapi.com/KegenGuyll/api/dad-jokes/endpoints) to obtain your API key -- you will have to copy it from the code snippets in the panel on the right.
-  4) Replace the placeholder text in your EnvironmentVariables.cs file with the API key.
+  2) Visit the [pricing tab](https://rapidapi.com/KegenGuyll/api/dad-jokes/pricing) of the Dad Jokes page to subscribe to the API. The free tier should suffice for testing purposes. 
+  3) Navigate to the [endpoints tab](https://rapidapi.com/KegenGuyll/api/dad-jokes/endpoints) to obtain your API key -- you will have to copy it from the code snippets in the panel to the right.
+  4) Replace the entire `[API KEY]` placeholder text in your EnvironmentVariables.cs file with the API key.
 
   #### Acquire Bot Token
 
@@ -165,7 +175,7 @@ Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get star
       * Select `Add Bot` on the right.
       * Select `Yes, do it!`.
   3) To acquire the bot token, click on `Copy` under **Build-A-Bot** to copy your token to your clipboard.
-  4) Replace the placeholder text in your EnvironmentVariables.cs file with your bot token.
+  4) Replace the entire `[BOT TOKEN]` placeholder text in your EnvironmentVariables.cs file with your bot token.
   
   #### Launch Application
 
@@ -178,6 +188,16 @@ Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get star
       * Select `Bot` under scopes.
       * Select `Send Messages` under **Text Permissions** inside of **Bot Permissions**.
   3) Copy the **URL** at the bottom of **Scopes**, and paste into the browser to invite the bot to servers you are an admin of.
+
+  #### Deploy via Docker
+
+  1) Install the Docker app if you haven't already, and create an account.
+  2) Create a new repository.
+  3) In the TravisScottDiscordBot.Solution/Bot repository, run `docker build -t <your-app-name> .`
+      * Run `docker build -t <your_username>/<your_repo_name> . ` to build your Docker image.
+      * Run `docker run <your_username>/<your_repo_name>` to test your Docker image locally.
+      * Run `docker push <your_username>/<your_repo_name>` to push your Docker image to Docker Hub.
+  4) Now you are ready to host this application remotely with any cloud provider that supports Docker! 
 
 ## 🛰️ Add OUR Bot
 
