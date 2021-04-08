@@ -40,7 +40,7 @@
     </a>
     ¨
     <a href="https://hub.docker.com/r/jeroenvanseeters/discord-bot">
-      <img src="https://img.shields.io/docker/cloud/automated/jeroenvanseeters/discord-bot?style=plastic">
+      <img src="https://img.shields.io/docker/cloud/automated/jeroenvanseeters/discord-bot?color=yellow&style=plastic">
     </a>
     ¨
     <a href="https://github.com/Pingel88/Best-ReadMe-Template/blob/master/LICENSE.txt">
@@ -61,7 +61,7 @@
 ## 🌐 About the Project
 
 ### 📖 Description
-A Discord bot that acts as a dad joke supplement to replace one of our retired instructors at [Epicodus](https://www.epicodus.com/). Written in C#/.NET, it utilizes an API via RESTful principles, WebSocket protocol, and Docker Containerization for remote server hosting. 
+A Discord bot that acts as a dad joke supplement to replace one of our retired instructors at [Epicodus](https://www.epicodus.com/). Written in C#/.NET, it utilizes an API via RESTful principles, WebSocket protocol, and Docker containerization for remote server hosting. 
 <br>
 <br>
 Although no setup is required to simply invite the bot to your Discord server, if you would like to download, alter, or deploy the source code yourself, follow along with the instructions detailed in the [Getting Started](#-getting-started) Section.
