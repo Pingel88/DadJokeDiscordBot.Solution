@@ -33,7 +33,7 @@ namespace Bot.Modules
     [Command("commands")]
     public async Task CommandList()
     {
-      await ReplyAsync("```yaml\n$ping play ping pong with Travis Scott Discord Bot\n$joke enjoy a dad joke from Travis Scott Discord Bot\n$botlink add this bot to your Discord\n$github view source code\n```");
+      await ReplyAsync("```php\n$ping play ping pong with Travis Scott Discord Bot\n$joke enjoy a dad joke provided by Travis Scott Discord Bot\n$botlink add this bot to your Discord\n$github view source code\n```");
     }
 
     [Command("github")]
