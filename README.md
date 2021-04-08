@@ -35,12 +35,12 @@
       <img src="https://img.shields.io/github/issues-pr-closed/pingel88/TravisScottDiscordBot.Solution?color=green&style=plastic">
     </a>
     ¨
-    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/stargazers">
-      <img src="https://img.shields.io/github/stars/Pingel88/TravisScottDiscordBot.Solution.svg?color=yellow&style=plastic">
+    <a href="https://hub.docker.com/r/jeroenvanseeters/discord-bot">
+      <img src="https://img.shields.io/docker/cloud/automated/jeroenvanseeters/discord-bot?color=green&style=plastic">
     </a>
     ¨
-    <a href="https://hub.docker.com/r/jeroenvanseeters/discord-bot">
-      <img src="https://img.shields.io/docker/cloud/automated/jeroenvanseeters/discord-bot?color=yellow&style=plastic">
+    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/stargazers">
+      <img src="https://img.shields.io/github/stars/Pingel88/TravisScottDiscordBot.Solution.svg?color=yellow&style=plastic">
     </a>
     ¨
     <a href="https://github.com/Pingel88/Best-ReadMe-Template/blob/master/LICENSE.txt">
