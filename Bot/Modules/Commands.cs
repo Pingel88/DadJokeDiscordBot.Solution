@@ -20,8 +20,6 @@ namespace Bot.Modules
       await ReplyAsync(joke.Setup);
       Thread.Sleep(6500);
       await ReplyAsync(joke.PunchLine);
-      Thread.Sleep(3000);
-      await ReplyAsync("https://cdn.discordapp.com/attachments/828833580250562580/829008098969911346/Screen_Shot_2021-04-05_at_4.32.27_PM.png");
     }
 
     [Command("botlink")]

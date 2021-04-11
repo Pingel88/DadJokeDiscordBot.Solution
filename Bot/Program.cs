@@ -70,8 +70,6 @@ namespace Bot
           if (result.ErrorReason == "Unknown command.")
           {
             await message.Channel.SendMessageAsync("Invalid command. For a list of commands, type $commands");
-            Thread.Sleep(3000);
-            await message.Channel.SendMessageAsync("https://i.imgur.com/iwEd8zI.gif");
           }
         }
         if (result.Error.Equals(CommandError.UnmetPrecondition)) await message.Channel.SendMessageAsync(result.ErrorReason);
