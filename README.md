@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-  <u><big>|| <b>Travis Scott Discord Bot</b> || </big></u>
+  <u><big>|| <b>Travis Scott Discord Bot !</b> || </big></u>
 </p>
 <br>
 <p align="center">
