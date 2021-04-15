@@ -31,13 +31,13 @@ namespace Bot.Modules
     [Command("commands")]
     public async Task CommandList()
     {
-      await ReplyAsync("```php\n$ping play ping pong with Travis Scott Discord Bot\n$joke enjoy a dad joke provided by Travis Scott Discord Bot\n$botlink add this bot to your Discord\n$github view source code\n```");
+      await ReplyAsync("```php\n$ping play ping pong with Dad Joke Discord Bot\n$joke enjoy a dad joke provided by Dad Joke Discord Bot\n$botlink add this bot to your Discord\n$github view source code\n```");
     }
 
     [Command("github")]
     public async Task GitHub()
     {
-      await ReplyAsync("https://github.com/Pingel88/TravisScottDiscordBot.Solution");
+      await ReplyAsync("https://github.com/Pingel88/DadJokeDiscordBot.Solution");
     }
   }
 }

@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-  <u><big>|| <b>Travis Scott Discord Bot !</b> || </big></u>
+  <u><big>|| <b>Dad Joke Discord Bot !</b> || </big></u>
 </p>
 <br>
 <p align="center">
@@ -23,24 +23,24 @@
     </a>
   </p>
   <p align="center">
-    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/graphs/contributors">
-      <img src="https://img.shields.io/github/contributors/Pingel88/TravisScottDiscordBot.Solution.svg?color=green&style=plastic">
+    <a href="https://github.com/Pingel88/DadJokeDiscordBot.Solution/graphs/contributors">
+      <img src="https://img.shields.io/github/contributors/Pingel88/DadJokeDiscordBot.Solution.svg?color=green&style=plastic">
     </a>
     ¨
-    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/issues">
-      <img src="https://img.shields.io/github/issues/Pingel88/TravisScottDiscordBot.Solution?color=green&style=plastic">
+    <a href="https://github.com/Pingel88/DadJokeDiscordBot.Solution/issues">
+      <img src="https://img.shields.io/github/issues/Pingel88/DadJokeDiscordBot.Solution?color=green&style=plastic">
     </a>
     ¨
-    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/pulls">
-      <img src="https://img.shields.io/github/issues-pr-closed/pingel88/TravisScottDiscordBot.Solution?color=green&style=plastic">
+    <a href="https://github.com/Pingel88/DadJokeDiscordBot.Solution/pulls">
+      <img src="https://img.shields.io/github/issues-pr-closed/pingel88/DadJokeDiscordBot.Solution?color=green&style=plastic">
     </a>
     ¨
     <a href="https://hub.docker.com/r/jeroenvanseeters/discord-bot">
       <img src="https://img.shields.io/docker/cloud/automated/jeroenvanseeters/discord-bot?color=green&style=plastic">
     </a>
     ¨
-    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/stargazers">
-      <img src="https://img.shields.io/github/stars/Pingel88/TravisScottDiscordBot.Solution.svg?color=yellow&style=plastic">
+    <a href="https://github.com/Pingel88/DadJokeDiscordBot.Solution/stargazers">
+      <img src="https://img.shields.io/github/stars/Pingel88/DadJokeDiscordBot.Solution.svg?color=yellow&style=plastic">
     </a>
     ¨
     <a href="https://github.com/Pingel88/Best-ReadMe-Template/blob/master/LICENSE.txt">
@@ -53,9 +53,9 @@
   <small>Initiated April 4th, 2021, Updated April 8th, 2021</small>
 </p>
 <p align="center">
-    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution"><big>Project Docs</big></a> ·
-    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/issues"><big>Report Bug</big></a> ·
-    <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/issues"><big>Request Feature</big></a>
+    <a href="https://github.com/Pingel88/DadJokeDiscordBot.Solution"><big>Project Docs</big></a> ·
+    <a href="https://github.com/Pingel88/DadJokeDiscordBot.Solution/issues"><big>Report Bug</big></a> ·
+    <a href="https://github.com/Pingel88/DadJokeDiscordBot.Solution/issues"><big>Request Feature</big></a>
 </p>
 
 ## 🌐 About the Project
@@ -124,25 +124,25 @@ Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get star
 
   #### Cloning
 
-  1) Navigate to the [Discord bot repository here](https://github.com/Pingel88/TravisScottDiscordBot.Solution).
+  1) Navigate to the [Discord bot repository here](https://github.com/Pingel88/DadJokeDiscordBot.Solution).
   2) Click 'Code' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
   3) Open up your system Terminal or GitBash, navigate to your desktop with the command: `cd Desktop`, or whichever location suits you best.
-  4) Clone the repository to your desktop: `$ git clone https://github.com/Pingel88/TravisScottDiscordBot.Solution.git`
-  5) Run the command `cd TravisScottDiscordBot.Solution` to enter into the project directory.
+  4) Clone the repository to your desktop: `$ git clone https://github.com/Pingel88/DadJokeDiscordBot.Solution.git`
+  5) Run the command `cd DadJokeDiscordBot.Solution` to enter into the project directory.
   6) View or edit:
       * Code editor - Run the command `atom .` or `code .` to open the project in Atom or Visual Studio Code respectively for review and editing.
       * Text editor - Open by double clicking on any of the files to open in a text editor.
 
   #### Download
 
-  1) Navigate to the [Discord bot repository here](https://github.com/Pingel88/TravisScottDiscordBot.Solution).
+  1) Navigate to the [Discord bot repository here](https://github.com/Pingel88/DadJokeDiscordBot.Solution).
   2) Click 'Code' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
   3) Click 'Download ZIP' and extract.
   4) Open by double clicking on any of the files to open in a text editor.
 
   #### EnvironmentVariables
 
-  1) Create a new file in the TravisScottDiscordBot.Solution/Bot/Models directory named `EnvironmentVariables.cs`.
+  1) Create a new file in the DadJokeDiscordBot.Solution/Bot/Models directory named `EnvironmentVariables.cs`.
   2) Add the following code snippet to the new EnvironmentVariables.cs file:
 
       ```
@@ -180,7 +180,7 @@ Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get star
   #### Launch Application
 
   With your environment variables in place, you are only a few terminal commands away from launching the bot.
-  1) In the TravisScottDiscordBot.Solution/Bot repository:
+  1) In the DadJokeDiscordBot.Solution/Bot repository:
       * Enter `dotnet restore` in your terminal.
       * Enter `dotnet run` in your terminal.
   2) Invite the bot to your server, Back in the [developers dashboard](https://Discord.com/developers/applications), apply the following steps:
@@ -193,7 +193,7 @@ Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get star
 
   1) Install the Docker app if you haven't already, and create an account.
   2) Create a new repository.
-  3) In the TravisScottDiscordBot.Solution/Bot repository, run `docker build -t <your-app-name> .`
+  3) In the DadJokeDiscordBot.Solution/Bot repository, run `docker build -t <your-app-name> .`
       * Run `docker build -t <your_username>/<your_repo_name> . ` to build your Docker image.
       * Run `docker run <your_username>/<your_repo_name>` to test your Docker image locally.
       * Run `docker push <your_username>/<your_repo_name>` to push your Docker image to Docker Hub.
@@ -215,10 +215,10 @@ Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get star
 
 | Author | GitHub | Email |
 |--------|:------:|:-----:|
-| [Mike Pingel](https://www.linkedin.com/in/mikepingel/) | [Pingel88](https://github.com/Pingel88) | [mdpingel@gmail.com](mailto:mdpingel+github@gmail.com?subject=[GitHub]Epicodus%20Team%20Week%20-%20Travis%20Scott%20Discord%20Bot) |
-| [Morgan Bradford](https://www.linkedin.com/in/morganjbradford/) | [MorganJBradford](https://github.com/MorganJBradford) | [morganjbradford95@gmail.com](mailto:morganjbradford95@gmail.com?subject=[GitHub]Epicodus%20Team%20Week%20-%20Travis%20Scott%20Discord%20Bot) |
-| [Levi Kohler](https://www.linkedin.com/in/levikohler/) | [levi-kohler](https://github.com/levi-kohler) | [kohler.la01@gmail.com](mailto:kohler.la01@gmail.com?subject=[GitHub]Epicodus%20Team%20Week%20-%20Travis%20Scott%20Discord%20Bot) |
-| [Jeroen van Seeters](https://linkedin.com/in/jeroenvanseeters) | [Jeroenemo](https://github.com/jeroenemo) |  [vanseetersjeroen@gmail.com](mailto:vanseetersjeroen@gmail.com?subject=[GitHub]Epicodus%20Team%20Week%20-%20Travis%20Scott%20Discord%20Bot) |
+| [Mike Pingel](https://www.linkedin.com/in/mikepingel/) | [Pingel88](https://github.com/Pingel88) | [mdpingel@gmail.com](mailto:mdpingel+github@gmail.com?subject=[GitHub]Epicodus%20Team%20Week%20-%20Dad%20Joke%20Discord%20Bot) |
+| [Morgan Bradford](https://www.linkedin.com/in/morganjbradford/) | [MorganJBradford](https://github.com/MorganJBradford) | [morganjbradford95@gmail.com](mailto:morganjbradford95@gmail.com?subject=[GitHub]Epicodus%20Team%20Week%20-%20Dad%20Joke%20Discord%20Bot) |
+| [Levi Kohler](https://www.linkedin.com/in/levikohler/) | [levi-kohler](https://github.com/levi-kohler) | [kohler.la01@gmail.com](mailto:kohler.la01@gmail.com?subject=[GitHub]Epicodus%20Team%20Week%20-%20Dad%20Joke%20Discord%20Bot) |
+| [Jeroen van Seeters](https://linkedin.com/in/jeroenvanseeters) | [Jeroenemo](https://github.com/jeroenemo) |  [vanseetersjeroen@gmail.com](mailto:vanseetersjeroen@gmail.com?subject=[GitHub]Epicodus%20Team%20Week%20-%20Dad%20Joke%20Discord%20Bot) |
 
 ------------------------------
 
@@ -227,8 +227,8 @@ Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get star
 If you have any feedback or concerns, please contact one of the contributors.
 
 <p>
-  <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/issues">Report Bug</a> ·
-  <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution/issues">Request Feature</a>
+  <a href="https://github.com/Pingel88/DadJokeDiscordBot.Solution/issues">Report Bug</a> ·
+  <a href="https://github.com/Pingel88/DadJokeDiscordBot.Solution/issues">Request Feature</a>
 </p>
 
 ------------------------------
