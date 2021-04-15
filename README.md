@@ -50,7 +50,7 @@
 </p>
 
 <p align="center">
-  <small>Initiated April 4th, 2021, Updated April 8th, 2021</small>
+  <small>Initiated April 4th, 2021, Updated April 14th, 2021</small>
 </p>
 <p align="center">
     <a href="https://github.com/Pingel88/TravisScottDiscordBot.Solution"><big>Project Docs</big></a> ·
